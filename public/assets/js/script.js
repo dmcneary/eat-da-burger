@@ -1,24 +1,24 @@
 $(document).ready(function () {
-    $(".create-form").on("submit", function (e) {
-        e.preventDefault();
+    $("#add-burger").on("click", function (event) {
+        event.preventDefault();
 
         var newBurger = {
-            name: $("#new-burger"),
-            eaten: false
+            name: $("#new-burger").val().trim(),
+            eaten: 0
         };
 
-        $.ajax("api/burgers", {
-            type: POST,
+        $.ajax("/api/burgers", {
+            type: "POST",
             data: newBurger
         }).then(reloader());
     });
 
-    $("#devour-btn").on("click", function(event) {
+    $(".devour-btn").on("click", function(event) {
         event.preventDefault();
 
         var id = $(this).data("id");
         var eatState = {
-            eaten: true
+            eaten: 1
         };
 
         // Send the PUT request.
@@ -28,7 +28,7 @@ $(document).ready(function () {
         }).then(reloader());
     });
 
-    $("#trash-btn").on("click", function(event) {
+    $(".trash-btn").on("click", function(event) {
         event.preventDefault();
 
         var id = $(this).data("id");

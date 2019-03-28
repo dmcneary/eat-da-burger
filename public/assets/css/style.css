@@ -1,20 +1,32 @@
-/*li {
+body {
+  background-color: #000;
+}
+
+.jumbotron {
+  background-image: url("../burgertile.jpg");
+}
+.jumbotron h1, h2, p {
+  background: #FFF;
+}
+
+li {
     padding: 5px;
     margin: 5px;
     background: #ebab58;
   }
   
-  .label {
+label {
     font-weight: bold;
   }
   
-  .create-update-form {
+.create-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
   }
+
+
   
-  .form-group {
+.form-group {
     margin-bottom: 5px;
   }
   
