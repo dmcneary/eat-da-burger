@@ -4,5 +4,5 @@
 
 ##### (They will catch up with you)
 
-Click [here](https://intense-beyond-55466.herokuapp.com/) to launch the app
+Click [here](https://sandwich-app.herokuapp.com/) to launch the app
 
