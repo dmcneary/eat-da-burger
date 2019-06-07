@@ -9,4 +9,4 @@ Users can add burgers which they would like to explore to the list on the left, 
 
 ### Future development
 
-I would like to integrate the an API to provide restaurant locations which serve the desired burger.
+I would like to integrate an API (like Yelp Fusion or Zomato) to provide restaurant locations which serve the desired burger.
